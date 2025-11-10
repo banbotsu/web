@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание по веб-разработке - Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="bg-primary-custom py-3 shadow-sm">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-auto text-center text-md-start">
+            <img class="logo rounded-circle" src="./armenia.svg" alt="logo" width="80" height="80" />
+          </div>
+          <div class="col-12 col-md">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-auto text-center text-lg-start mb-2 mb-lg-0">
+                <h1 class="h4 mb-0 site-name">Армяне Всего Мира</h1>
+              </div>
+              <div class="col-12 col-lg">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                  <div class="container-fluid p-0 justify-content-center justify-content-lg-end">
+                    <ul class="navbar-nav flex-column flex-lg-row gap-2 gap-lg-3">
+                      <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded text-center" href="#link1">Гиперссылки</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded text-center" href="#link2">Таблица</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded text-center" href="#link3">Форма</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-4 d-flex flex-column">
+      <section id="table-section" class="mb-4 order-md-2">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 id="link2" class="card-title border-bottom border-primary-custom pb-2 mb-4">Таблица</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover">
+                <thead class="table-primary-custom">
+                  <tr>
+                    <th scope="col">Колонка 1</th>
+                    <th scope="col">Колонка 2</th>
+                    <th scope="col">Колонка 3</th>
+                    <th scope="col">Колонка 4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-even">
+                    <td>Ячейка 1-1</td>
+                    <td>Ячейка 1-2</td>
+                    <td>Ячейка 1-3</td>
+                    <td>Ячейка 1-4</td>
+                  </tr>
+                  <tr class="table-odd">
+                    <td>Ячейка 2-1</td>
+                    <td>Ячейка 2-2</td>
+                    <td>Ячейка 2-3</td>
+                    <td>Ячейка 2-4</td>
+                  </tr>
+                  <tr class="table-even">
+                    <td>Ячейка 3-1</td>
+                    <td>Ячейка 3-2</td>
+                    <td>Ячейка 3-3</td>
+                    <td>Ячейка 3-4</td>
+                  </tr>
+                  <tr class="table-odd">
+                    <td>Ячейка 4-1</td>
+                    <td>Ячейка 4-2</td>
+                    <td>Ячейка 4-3</td>
+                    <td>Ячейка 4-4</td>
+                  </tr>
+                  <tr class="table-even">
+                    <td>Ячейка 5-1</td>
+                    <td>Ячейка 5-2</td>
+                    <td>Ячейка 5-3</td>
+                    <td>Ячейка 5-4</td>
+                  </tr>
+                  <tr class="table-odd">
+                    <td>Ячейка 6-1</td>
+                    <td>Ячейка 6-2</td>
+                    <td>Ячейка 6-3</td>
+                    <td>Ячейка 6-4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="links-section" class="mb-4 order-md-1">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 id="link1" class="card-title border-bottom border-primary-custom pb-2 mb-4">Маркированный список гиперссылок</h2>
+            <ul class="list-unstyled ms-3">
+              <li class="mb-3">• <a href="http://kubsu.ru" class="link-custom">Главная страница КубГУ (HTTP)</a></li>
+              <li class="mb-3">• <a href="https://kubsu.ru" class="link-custom">Главная страница КубГУ (HTTPS)</a></li>
+              <li class="mb-3">
+                •
+                <a href="https://kubsu.ru">
+                  <img src="image.jpg" class="img-fluid rounded border" width="560" height="420" alt="Цветок" />
+                </a>
+              </li>
+              <li class="mb-3">• <a href="/page" class="link-custom">Внутренняя страница (сокращенная)</a></li>
+              <li class="mb-3">• <a href="/" class="link-custom">Главная (сокращенная)</a></li>
+              <li class="mb-3">• <a href="#form-section" class="link-custom">Перейти к форме</a></li>
+              <li class="mb-3">• <a href="https://example.com/page?param1=value1&param2=value2&param3=value3" class="link-custom">Ссылка с тремя параметрами</a></li>
+              <li class="mb-3">• <a href="https://example.com/page?id=123" class="link-custom">Ссылка с параметром id</a></li>
+              <li class="mb-3">• <a href="page.html" class="link-custom">Страница в текущем каталоге</a></li>
+              <li class="mb-3">• <a href="about/info.html" class="link-custom">Страница в каталоге about</a></li>
+              <li class="mb-3">• <a href="firstlvl/page.html" class="link-custom">Страница уровнем выше</a></li>
+              <li class="mb-3">• <a href="firstlvl/secondlvl/page.html" class="link-custom">Страница двумя уровнями выше</a></li>
+              <li class="mb-3">
+                •
+                <p class="mb-0">Это абзац текста, в котором есть <a href="https://kubsu.ru" class="link-custom">контекстная ссылка на КубГУ</a>, встроенная в предложение.</p>
+              </li>
+              <li class="mb-3">• <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D0%B5#:~:text=%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D0%B5,-%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%20%D0%B8%D0%B7%20%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D0%B8" class="link-custom">Фрагмент страницы Википедии</a></li>
+              <li class="mb-3">
+                •
+                <img src="image.jpg" class="img-fluid rounded" width="400" height="200" alt="Карта изображения" usemap="#imagemap" />
+                <map name="imagemap">
+                  <area shape="rect" coords="0,0,200,200" href="https://example.com/rect" alt="Прямоугольная область" />
+                  <area shape="circle" coords="300,100,80" href="https://example.com/circle" alt="Круглая область" />
+                </map>
+              </li>
+              <li class="mb-3">• <a href="" class="link-custom">Ссылка с пустым href</a></li>
+              <li class="mb-3">• <a class="text-muted">Ссылка без href</a></li>
+              <li class="mb-3">• <a href="https://example.com/nofollow" rel="nofollow" class="link-custom">Ссылка с nofollow</a></li>
+              <li class="mb-3">• <a href="https://example.com/noindex" rel="noindex" class="link-custom">Ссылка с noindex</a></li>
+              <li class="mb-3">
+                •
+                <p class="mb-2">Нумерованный список с title:</p>
+                <ol class="ms-3">
+                  <li><a href="https://example.com/1" title="Первая ссылка" class="link-custom">Ссылка 1</a></li>
+                  <li><a href="https://example.com/2" title="Вторая ссылка" class="link-custom">Ссылка 2</a></li>
+                  <li><a href="https://example.com/3" title="Третья ссылка" class="link-custom">Ссылка 3</a></li>
+                </ol>
+              </li>
+              <li class="mb-3">• <a href="ftp://user:password@ftp.example.com/file.txt" class="link-custom">Файл на FTP сервере</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="form-section" class="mb-4 order-md-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 id="link3" class="card-title border-bottom border-primary-custom pb-2 mb-4">Форма регистрации</h2>
+            <form action="/submit" method="POST" id="registrationForm">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="fullname" class="form-label fw-semibold">ФИО:</label>
+                  <input type="text" class="form-control" id="fullname" name="fullname" required />
+                  <div class="invalid-feedback">Пожалуйста, введите имя и фамилию (минимум два слова).</div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="phone" class="form-label fw-semibold">Телефон:</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required />
+                  <div class="invalid-feedback">Пожалуйста, введите корректный российский номер телефона.</div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="email" class="form-label fw-semibold">E-mail:</label>
+                  <input type="email" class="form-control" id="email" name="email" required />
+                  <div class="invalid-feedback">Пожалуйста, введите корректный email.</div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="birthdate" class="form-label fw-semibold">Дата рождения:</label>
+                  <input type="date" class="form-control" id="birthdate" name="birthdate" required />
+                  <div class="invalid-feedback">Пожалуйста, выберите дату рождения.</div>
+                </div>
+                <div class="col-12 mb-3">
+                  <label class="form-label fw-semibold">Пол:</label>
+                  <div class="d-flex flex-column flex-md-row gap-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="male" value="male" required />
+                      <label class="form-check-label" for="male"> Мужской </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" id="female" value="female" required />
+                      <label class="form-check-label" for="female"> Женский </label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback d-block" id="genderError" style="display: none !important">Пожалуйста, выберите пол.</div>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="languages" class="form-label fw-semibold">Любимый язык программирования:</label>
+                  <select class="form-select" id="languages" name="languages" multiple size="6" required>
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskell">Haskell</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                  </select>
+                  <small class="form-text text-muted">Удерживайте Ctrl (Cmd) для выбора нескольких вариантов</small>
+                  <div class="invalid-feedback">Пожалуйста, выберите хотя бы один язык программирования.</div>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="biography" class="form-label fw-semibold">Биография:</label>
+                  <textarea class="form-control" id="biography" name="biography" rows="5" required></textarea>
+                  <div class="invalid-feedback">Пожалуйста, заполните поле биографии.</div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="contract" id="contract" required />
+                    <label class="form-check-label" for="contract"> С контрактом ознакомлен(а) </label>
+                    <div class="invalid-feedback">Необходимо согласиться с условиями контракта.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100 w-md-auto px-5 py-2">Сохранить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="calculator-section" class="mb-4 order-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 id="link4" class="card-title border-bottom border-primary-custom pb-2 mb-4">Калькулятор стоимости заказа</h2>
+            <form id="calculatorForm">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="product" class="form-label fw-semibold">Выберите товар:</label>
+                  <select class="form-select" id="product" name="product" required>
+                    <option value="" selected disabled>Выберите товар...</option>
+                    <option value="1500">Армянский коньяк "Арарат" 5 лет - 1500 ₽</option>
+                    <option value="2500">Армянский коньяк "Арарат" 10 лет - 2500 ₽</option>
+                    <option value="5000">Армянский коньяк "Арарат" 20 лет - 5000 ₽</option>
+                    <option value="800">Армянское вино "Арени" - 800 ₽</option>
+                    <option value="1200">Армянский сыр "Чанах" (1 кг) - 1200 ₽</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="quantity" class="form-label fw-semibold">Количество:</label>
+                  <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1" required />
+                </div>
+                <div class="col-12 mb-3">
+                  <button type="button" class="btn btn-primary-custom px-4 py-2" id="calculateBtn">Рассчитать стоимость</button>
+                </div>
+                <div class="col-12">
+                  <div id="result" class="alert alert-info d-none" role="alert">
+                    <h5 class="alert-heading mb-2">Стоимость заказа:</h5>
+                    <p class="mb-0 fs-4 fw-bold" id="totalPrice">0 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="service-calculator-section" class="mb-4 order-md-5">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 id="link5" class="card-title border-bottom border-primary-custom pb-2 mb-4">Калькулятор стоимости услуги</h2>
+            <form id="serviceCalculatorForm">
+              <div class="row">
+                <div class="col-12 mb-4">
+                  <label for="serviceQuantity" class="form-label fw-semibold">Количество:</label>
+                  <input type="number" class="form-control" id="serviceQuantity" name="serviceQuantity" min="1" value="1" required />
+                </div>
+                <div class="col-12 mb-4">
+                  <label class="form-label fw-semibold d-block mb-3">Выберите тип услуги:</label>
+                  <div class="d-flex flex-column gap-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="serviceType" id="serviceType1" value="type1" data-price="1000" checked />
+                      <label class="form-check-label" for="serviceType1"> <strong>Перевод документов</strong> - 1000 ₽ за документ </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="serviceType" id="serviceType2" value="type2" data-price="2000" />
+                      <label class="form-check-label" for="serviceType2"> <strong>Экскурсия по Армении</strong> - 2000 ₽ за человека </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="serviceType" id="serviceType3" value="type3" data-price="1500" />
+                      <label class="form-check-label" for="serviceType3"> <strong>Доставка товаров</strong> - 1500 ₽ за заказ </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mb-4 d-none" id="optionsBlock">
+                  <label for="serviceOptions" class="form-label fw-semibold">Выберите маршрут:</label>
+                  <select class="form-select" id="serviceOptions" name="serviceOptions">
+                    <option value="0" selected>Стандартный маршрут (без доплаты)</option>
+                    <option value="500">Расширенный маршрут (+500 ₽)</option>
+                    <option value="1000">VIP маршрут с гидом (+1000 ₽)</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-4 d-none" id="propertyBlock">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="serviceProperty" name="serviceProperty" value="300" />
+                    <label class="form-check-label" for="serviceProperty"> Экспресс-доставка (+300 ₽) </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="alert alert-success" role="alert">
+                    <h5 class="alert-heading mb-2">Итоговая стоимость:</h5>
+                    <p class="mb-0 fs-3 fw-bold" id="serviceTotalPrice">1 000 ₽</p>
+                    <hr class="my-2" />
+                    <small class="text-muted" id="priceBreakdown"> Базовая цена: 1 000 ₽ × 1 = 1 000 ₽ </small>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery-section" class="mb-4 order-md-0">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title border-bottom border-primary-custom pb-2 mb-4">Галерея</h2>
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-outline-secondary px-3" id="sliderPrev" aria-label="Назад">&larr;</button>
+              <div class="flex-grow-1 overflow-hidden" id="sliderViewport">
+                <div class="row flex-nowrap g-3" id="sliderTrack">
+                  <div class="col-12 col-md-4">
+                    <img class="img-fluid w-100 rounded border" src="https://newsarmenia.am/upload/iblock/2e6/t9dzpocmvzijc4q3997qaphasy2djo34.jpg" alt="1" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img class="img-fluid w-100 rounded border" src="https://yt3.googleusercontent.com/ytc/AIdro_mkROR_5UGhVUAmdm9cpJaVRuYBFIOBY_T1rV0JJhYyaQc=s900-c-k-c0x00ffffff-no-rj" alt="2" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img class="img-fluid w-100 rounded border" src="https://ph0.qna.center/storage/photos/shepelenko61/1335050.jpg" alt="3" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img class="img-fluid w-100 rounded border" src="https://avatars.mds.yandex.net/i?id=86ec39eab8bdb66e1871731f74fae55c_l-12733951-images-thumbs&n=13" alt="4" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img
+                      class="img-fluid w-100 rounded border"
+                      src="https://yandex-images.clstorage.net/9UEu8J354/dd1a16cyqFd/5xNdkrJ1bZrarqN8VY_o3fzBDz3U2TzA_T7HUGepM6FZn3fojtvP0npDIfEjDwdUUz6UTyj_-REANXx23Ex3DfNCCMOl5K2bn7xh71MM7Nivxl_7UE8_zXPh2439d74r0IB8-liOGwfoBXFhbAABS5q7WBN4r6wVEaK6-Y4UpNvrUFTSfGfjXpO7ozIUCKgW5wlCsUEY4cb-69YBNLhybJ2P8zVUSJCCLtPxbyFF18SXt1hb8OHv2JZucjWG3yRTZhxTlrUnL9qaNK__3M8qkqNCAPlMly4P9OWbgDQwNCIVgHN5W4VZiiRaPaqvzBgHWXSWUvajYxMWL_a8yx9nGWfaHRxyYKWS1Tesdh7DKF2uzs1xTBBhQ_8sGAiydfhlnwk1eJzI0oDjFrzmr4WbCpnyGNA2Zqab3Cc5-0wVKZsrm9PU_aDnWNN5Z_pUx2TaYUbGvkFRa4ow6ptNMbe2oVDHNfnThNcNYxT2ImsOkc3SMhBUPKBpEhLp9T4Fm-cS4V_WnPYv7pgb8S_5msVnka1Jw_TH3ecDN-TeR7S9sSTcADE1WoPQS2eScWFmw5fDkz-X2P9qZJxfJvLwAlmrm2kY39OyaucQ3TOgsJrDqN2jxwa8DFvqSXFsEEk3fLos2sGx9lFL30zn1LRqZ03fQVb22Nd-o-gZGC-xt86d513slh8bNWynk1K_qDXVxSvXZcZNPsuSZkuw5RhPcPJw6FqLevGcSNjHIhx_aC2CXYXedB5QPGphXRpjv3DG02zdoxceFXwt7JAatyOxnwLvn-nKwD7H2GUH8GgfBrP6MaVYyfY9FonaxW2bMaxrDlOD1X9XFT-hYZoWZvN-RNPtGqIXlhz7r-vZ2zspvNsFKlfsCMy4hBqpj32h2I9_tzgk30h0NVbOmIAqkL1qb0RUgp-7n128YGQbHu-3dM5R7xQl0FVYtC9tGdD4oPqVDGufacnIek-Q54j-JJtOss"
+                      alt="5"
+                    />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img class="img-fluid w-100 rounded border" src="https://avatars.mds.yandex.net/i?id=bfc64c4e6bb3a9e4dd21802c63436e01_l-8350569-images-thumbs&n=13" alt="6" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img class="img-fluid w-100 rounded border" src="https://avatars.mds.yandex.net/i?id=515c9f20d45688c94906f29eb403e85f_l-8194355-images-thumbs&n=13" alt="7" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img
+                      class="img-fluid w-100 rounded border"
+                      src="https://yandex-images.clstorage.net/9UEu8J354/dd1a16cyqFd/5xNdkrJ1bZrarqN8VY_o3fzBDz3U2TzA_T7HxaY9JuDYX_YpTBhOBzoXdWSjjoRBU6pVmCu_rEQBNjxxC4o1TLPDyIPjs32ZnT1k_VLdrJnqAc78Fpj8VujmXA069P1qVcB-tlNL2kUvF7P3p0qejsP0nBxw4ehVlaf29AZVIBWildHQP6KkGtP4aPqQAOudrs-GMwvS7QE27dEHN3g0pZmHM7nchNaDpJJ1ISdE08sVe5EQcKlgG9ZqcTjOmSjeIh1cnDjmbVoffGF1nM0jWixLwnhJmuCO-STbCXr5NC3fybu2XMjZTm2af6jrgV1C2rhf076gZllaofF5ShBlHmFXXVp2bKodlTQudp9E4VYuhM_0hBLgCbZo0MD5cbJoE44xPxrJHgPmkLjkas1dC1m1n1UwIqacnyk7cYVX4hQv1REbuKQl3df-KDhUyKtSYgMAfI_d7Ui8oR8GejQxql1K_vEaSFFP4x045iAJmYBTctSVOKasWlCg9b9Jkqua4Vzb373sLlLePuCwHMtlUGFIzHOKl2vEMCgYCD8-tKBaz3I2HoTYSORbPGCnSpRNVXyVmL8qb5BdLrhwTlysWK3VU5i0o2oX17YmcpOCZVauBML9T9-gQj1iXoDxMDdhUcd0955H04DrXLwmYkGVwx3-UFHwJe5Z0av_eQ0bYJzhE9YWdGvtEZc1qf6bBypQLQ4E_ARdZ4uxYJ8J-TZw75sD9L1VQB6D7Nd57qlD3wyfOtjTNqKskFjv_TUD3GjSapOZl3VlpFDcNuH2EINgl-lGiPCJXWvBsizfhP5_s-faTvb_2YyUQu7VNmnnh5mAkTzT2H_nr1tYKPEwT9Lq0utUmJf9bCPS238gehqOJJAsjo0yhdsoA36kUk059n-q089xfluE1AWskHFia0GdypY9mRy3ryyaXan5uQvYYFDpWh9QPihsUl2_K7mTyGqZbUYI84EZ44kwo9HIeg"
+                      alt="8"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-outline-secondary px-3" id="sliderNext" aria-label="Вперёд">&rarr;</button>
+            </div>
+            <div class="d-flex justify-content-center gap-2 mt-3" id="sliderPager"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary-custom text-center py-3 mt-auto">
+      <div class="container">
+        <p class="mb-0">(c) Самир</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/form-validation.js"></script>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/service-calculator.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
