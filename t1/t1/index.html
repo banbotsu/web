@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+<header>
+    <h1>HTML</h1>
+</header>
+
+<main>
+    <section id="links-section">
+        <h2>Маркированный список гиперссылок</h2>
+        <ul>
+            <li><a href="http://kubsu.ru">Главная страница КубГУ (HTTP)</a></li>
+
+            <li><a href="https://kubsu.ru">Главная страница КубГУ (HTTPS)</a></li>
+
+            <li>
+                <a href="https://kubsu.ru">
+                    <img src="image.jpg" width="560" height="420" alt="Цветок">
+                </a>
+            </li>
+
+            <li><a href="/page">Внутренняя страница (сокращенная)</a></li>
+
+            <li><a href="/">Главная (сокращенная)</a></li>
+
+            <li><a href="#form-section">Перейти к форме</a></li>
+
+            <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
+
+            <li><a href="https://example.com/page?id=123">Ссылка с параметром id</a></li>
+
+            <li><a href="page.html">Страница в текущем каталоге</a></li>
+
+            <li><a href="about/info.html">Страница в каталоге about</a></li>
+
+            <li><a href="firstlvl/page.html">Страница уровнем выше</a></li>
+
+            <li><a href="firstlvl/secondlvl/page.html">Страница двумя уровнями выше</a></li>
+
+            <li>
+                <p>Это абзац текста, в котором есть <a href="https://kubsu.ru">контекстная ссылка на КубГУ</a>, встроенная в предложение.</p>
+            </li>
+
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D0%B5#:~:text=%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D0%B5,-%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%20%D0%B8%D0%B7%20%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D0%B8">Фрагмент страницы Википедии</a></li>
+            <li>
+                <img src="image.jpg" width="400" height="200" alt="Карта изображения" usemap="#imagemap">
+                <map name="imagemap">
+                    <area shape="rect" coords="0,0,200,200" href="https://example.com/rect" alt="Прямоугольная область">
+                    <area shape="circle" coords="300,100,80" href="https://example.com/circle" alt="Круглая область">
+                </map>
+            </li>
+
+            <li><a href="">Ссылка с пустым href</a></li>
+
+            <li><a>Ссылка без href</a></li>
+
+            <li><a href="https://example.com/nofollow" rel="nofollow">Ссылка с nofollow</a></li>
+
+            <li><a href="https://example.com/noindex" rel="noindex">Ссылка с noindex</a></li>
+
+            <li>
+                <p>Нумерованный список с title:</p>
+                <ol>
+                    <li><a href="https://example.com/1" title="Первая ссылка">Ссылка 1</a></li>
+                    <li><a href="https://example.com/2" title="Вторая ссылка">Ссылка 2</a></li>
+                    <li><a href="https://example.com/3" title="Третья ссылка">Ссылка 3</a></li>
+                </ol>
+            </li>
+
+            <li><a href="ftp://user:password@ftp.example.com/file.txt">Файл на FTP сервере</a></li>
+        </ul>
+    </section>
+
+    <section id="form-section">
+        <h2>Форма регистрации</h2>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Дата рождения:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Пол:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" required>
+                        Женский
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="languages">Любимый язык программирования:</label>
+                <select id="languages" name="languages" multiple size="6" required>
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskell">Haskell</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+                <small>ctrl для выбора нескольких вариантов</small>
+            </div>
+
+            <div class="form-group">
+                <label for="biography">Биография:</label>
+                <textarea id="biography" name="biography" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="contract" required>
+                    С контрактом ознакомлен(а)
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Сохранить</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<script>
+  (function() {
+    'use strict';
+
+    const form = document.getElementById('registrationForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (form.checkValidity() && isFullnameValid && isPhoneValid) {
+        alert('успех');
+      } else {
+        form.classList.add('was-validated');
+      }
+    }, false);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание по веб-разработке - Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!-- Header -->
+<header class="bg-primary-custom py-3 shadow-sm">
+    <div class="container">
+        <div class="row align-items-center g-3">
+            <div class="col-12 col-md-auto text-center text-md-start">
+                <img class="logo rounded-circle" src="./armenia.svg" alt="logo" width="80" height="80">
+            </div>
+            <div class="col-12 col-md">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-auto text-center text-lg-start mb-2 mb-lg-0">
+                        <h1 class="h4 mb-0 site-name">Армяне Всего Мира</h1>
+                    </div>
+                    <div class="col-12 col-lg">
+                        <nav class="navbar navbar-expand-lg navbar-light p-0">
+                            <div class="container-fluid p-0 justify-content-center justify-content-lg-end">
+                                <ul class="navbar-nav flex-column flex-lg-row gap-2 gap-lg-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 py-2 rounded text-center" href="#link1">Гиперссылки</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 py-2 rounded text-center" href="#link2">Таблица</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-3 py-2 rounded text-center" href="#link3">Форма</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container my-4 d-flex flex-column">
+    <!-- Таблица (первая на мобильных) -->
+    <section id="table-section" class="mb-4 order-md-2">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 id="link2" class="card-title border-bottom border-primary-custom pb-2 mb-4">Таблица</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-primary-custom">
+                        <tr>
+                            <th scope="col">Колонка 1</th>
+                            <th scope="col">Колонка 2</th>
+                            <th scope="col">Колонка 3</th>
+                            <th scope="col">Колонка 4</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="table-even">
+                            <td>Ячейка 1-1</td>
+                            <td>Ячейка 1-2</td>
+                            <td>Ячейка 1-3</td>
+                            <td>Ячейка 1-4</td>
+                        </tr>
+                        <tr class="table-odd">
+                            <td>Ячейка 2-1</td>
+                            <td>Ячейка 2-2</td>
+                            <td>Ячейка 2-3</td>
+                            <td>Ячейка 2-4</td>
+                        </tr>
+                        <tr class="table-even">
+                            <td>Ячейка 3-1</td>
+                            <td>Ячейка 3-2</td>
+                            <td>Ячейка 3-3</td>
+                            <td>Ячейка 3-4</td>
+                        </tr>
+                        <tr class="table-odd">
+                            <td>Ячейка 4-1</td>
+                            <td>Ячейка 4-2</td>
+                            <td>Ячейка 4-3</td>
+                            <td>Ячейка 4-4</td>
+                        </tr>
+                        <tr class="table-even">
+                            <td>Ячейка 5-1</td>
+                            <td>Ячейка 5-2</td>
+                            <td>Ячейка 5-3</td>
+                            <td>Ячейка 5-4</td>
+                        </tr>
+                        <tr class="table-odd">
+                            <td>Ячейка 6-1</td>
+                            <td>Ячейка 6-2</td>
+                            <td>Ячейка 6-3</td>
+                            <td>Ячейка 6-4</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Список гиперссылок -->
+    <section id="links-section" class="mb-4 order-md-1">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 id="link1" class="card-title border-bottom border-primary-custom pb-2 mb-4">Маркированный список гиперссылок</h2>
+                <ul class="list-unstyled ms-3">
+                    <li class="mb-3">• <a href="http://kubsu.ru" class="link-custom">Главная страница КубГУ (HTTP)</a></li>
+                    <li class="mb-3">• <a href="https://kubsu.ru" class="link-custom">Главная страница КубГУ (HTTPS)</a></li>
+                    <li class="mb-3">•
+                        <a href="https://kubsu.ru">
+                            <img src="image.jpg" class="img-fluid rounded border" width="560" height="420" alt="Цветок">
+                        </a>
+                    </li>
+                    <li class="mb-3">• <a href="/page" class="link-custom">Внутренняя страница (сокращенная)</a></li>
+                    <li class="mb-3">• <a href="/" class="link-custom">Главная (сокращенная)</a></li>
+                    <li class="mb-3">• <a href="#form-section" class="link-custom">Перейти к форме</a></li>
+                    <li class="mb-3">• <a href="https://example.com/page?param1=value1&param2=value2&param3=value3" class="link-custom">Ссылка с тремя параметрами</a></li>
+                    <li class="mb-3">• <a href="https://example.com/page?id=123" class="link-custom">Ссылка с параметром id</a></li>
+                    <li class="mb-3">• <a href="page.html" class="link-custom">Страница в текущем каталоге</a></li>
+                    <li class="mb-3">• <a href="about/info.html" class="link-custom">Страница в каталоге about</a></li>
+                    <li class="mb-3">• <a href="firstlvl/page.html" class="link-custom">Страница уровнем выше</a></li>
+                    <li class="mb-3">• <a href="firstlvl/secondlvl/page.html" class="link-custom">Страница двумя уровнями выше</a></li>
+                    <li class="mb-3">•
+                        <p class="mb-0">Это абзац текста, в котором есть <a href="https://kubsu.ru" class="link-custom">контекстная ссылка на КубГУ</a>, встроенная в предложение.</p>
+                    </li>
+                    <li class="mb-3">• <a href="https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D0%B5#:~:text=%D0%90%D1%80%D0%BC%D1%8F%D0%BD%D0%B5,-%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%20%D0%B8%D0%B7%20%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D0%B8" class="link-custom">Фрагмент страницы Википедии</a></li>
+                    <li class="mb-3">•
+                        <img src="image.jpg" class="img-fluid rounded" width="400" height="200" alt="Карта изображения" usemap="#imagemap">
+                        <map name="imagemap">
+                            <area shape="rect" coords="0,0,200,200" href="https://example.com/rect" alt="Прямоугольная область">
+                            <area shape="circle" coords="300,100,80" href="https://example.com/circle" alt="Круглая область">
+                        </map>
+                    </li>
+                    <li class="mb-3">• <a href="" class="link-custom">Ссылка с пустым href</a></li>
+                    <li class="mb-3">• <a class="text-muted">Ссылка без href</a></li>
+                    <li class="mb-3">• <a href="https://example.com/nofollow" rel="nofollow" class="link-custom">Ссылка с nofollow</a></li>
+                    <li class="mb-3">• <a href="https://example.com/noindex" rel="noindex" class="link-custom">Ссылка с noindex</a></li>
+                    <li class="mb-3">•
+                        <p class="mb-2">Нумерованный список с title:</p>
+                        <ol class="ms-3">
+                            <li><a href="https://example.com/1" title="Первая ссылка" class="link-custom">Ссылка 1</a></li>
+                            <li><a href="https://example.com/2" title="Вторая ссылка" class="link-custom">Ссылка 2</a></li>
+                            <li><a href="https://example.com/3" title="Третья ссылка" class="link-custom">Ссылка 3</a></li>
+                        </ol>
+                    </li>
+                    <li class="mb-3">• <a href="ftp://user:password@ftp.example.com/file.txt" class="link-custom">Файл на FTP сервере</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма -->
+    <section id="form-section" class="mb-4 order-md-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 id="link3" class="card-title border-bottom border-primary-custom pb-2 mb-4">Форма регистрации</h2>
+                <form action="/submit" method="POST" id="registrationForm">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="fullname" class="form-label fw-semibold">ФИО:</label>
+                            <input type="text" class="form-control" id="fullname" name="fullname" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите имя и фамилию (минимум два слова).
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="phone" class="form-label fw-semibold">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите корректный российский номер телефона.
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="email" class="form-label fw-semibold">E-mail:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите корректный email.
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="birthdate" class="form-label fw-semibold">Дата рождения:</label>
+                            <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, выберите дату рождения.
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="form-label fw-semibold">Пол:</label>
+                            <div class="d-flex flex-column flex-md-row gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                                    <label class="form-check-label" for="male">
+                                        Мужской
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                                    <label class="form-check-label" for="female">
+                                        Женский
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="invalid-feedback d-block" id="genderError" style="display: none !important;">
+                                Пожалуйста, выберите пол.
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="languages" class="form-label fw-semibold">Любимый язык программирования:</label>
+                            <select class="form-select" id="languages" name="languages" multiple size="6" required>
+                                <option value="pascal">Pascal</option>
+                                <option value="c">C</option>
+                                <option value="cpp">C++</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="php">PHP</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="haskell">Haskell</option>
+                                <option value="clojure">Clojure</option>
+                                <option value="prolog">Prolog</option>
+                                <option value="scala">Scala</option>
+                            </select>
+                            <small class="form-text text-muted">Удерживайте Ctrl (Cmd) для выбора нескольких вариантов</small>
+                            <div class="invalid-feedback">
+                                Пожалуйста, выберите хотя бы один язык программирования.
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="biography" class="form-label fw-semibold">Биография:</label>
+                            <textarea class="form-control" id="biography" name="biography" rows="5" required></textarea>
+                            <div class="invalid-feedback">
+                                Пожалуйста, заполните поле биографии.
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="contract" id="contract" required>
+                                <label class="form-check-label" for="contract">
+                                    С контрактом ознакомлен(а)
+                                </label>
+                                <div class="invalid-feedback">
+                                    Необходимо согласиться с условиями контракта.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary-custom w-100 w-md-auto px-5 py-2">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-primary-custom text-center py-3 mt-auto">
+    <div class="container">
+        <p class="mb-0">(c) Самир</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function() {
+    'use strict';
+
+    const form = document.getElementById('registrationForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (form.checkValidity() && isFullnameValid && isPhoneValid) {
+        alert('успех');
+      } else {
+        form.classList.add('was-validated');
+      }
+    }, false);
+  })();
+</script>
+</body>
+</html>
